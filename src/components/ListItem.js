@@ -4,7 +4,7 @@ const ListItem = (props) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <li>
+    <li style={{ position: "relative" }}>
       <a
         onMouseEnter={() => setIsActive(true)}
         onMouseLeave={() => setIsActive(false)}
