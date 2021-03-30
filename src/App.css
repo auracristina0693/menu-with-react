@@ -16,21 +16,3 @@
 .nav .active {
   color: #ea178c;
 }
-
-.animation {
-  position: absolute;
-  left: 38%;
-  top: 50px;
-  border: 1px solid #ea178c;
-  animation: borderline 3s infinite;
-}
-
-@keyframes borderline {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 40px;
-  }
-}

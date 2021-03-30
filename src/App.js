@@ -1,15 +1,14 @@
 import "./App.css";
 import ListItem from "./components/ListItem";
+import { items } from "./data";
 
 function App() {
   return (
     <div>
       <ul className="nav">
-        <ListItem>Hello.</ListItem>
-        <ListItem>Work.</ListItem>
-        <ListItem>About.</ListItem>
-        <ListItem>Carrers.</ListItem>
-        <ListItem>Contact.</ListItem>
+        {items.map((item) => (
+          <ListItem>{`${item}.`}</ListItem>
+        ))}
       </ul>
     </div>
   );

@@ -1,17 +1,18 @@
 import React, { useState } from "react";
+import "./ListItem.css";
 
-const ListItem = (props) => {
+const ListItem = ({ children }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <li style={{ position: "relative" }}>
+    <li className="listItem">
       <a
         onMouseEnter={() => setIsActive(true)}
         onMouseLeave={() => setIsActive(false)}
         className={isActive ? "active" : ""}
         href="/"
       >
-        {props.children}
+        {children}
       </a>
       <div className={isActive ? "animation" : ""}></div>
     </li>
